@@ -1,0 +1,86 @@
+
+body {
+    background: linear-gradient(135deg, #ffb6d9, #d9b3ff, #fff0b3);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #a00068;
+    font-size: 36px;
+    margin-top: 25px;
+    text-shadow: 2px 2px white;
+}
+
+.birthday-name {
+    color: #702080;
+    font-size: 30px;
+    margin-top: -10px;
+    text-shadow: 1px 2px white;
+}
+
+.game-area {
+    position: relative;
+    width: 400px;
+    margin: 25px auto;
+}
+
+canvas {
+    background: linear-gradient(#b9eaff, #ffe1f0);
+    border: 6px solid #d63384;
+    border-radius: 18px;
+    display: block;
+    box-shadow: 0 0 25px #ff69b4;
+}
+
+.cake {
+    position: absolute;
+    font-size: 65px;
+    z-index: 2;
+    filter: drop-shadow(3px 4px 3px #995577);
+}
+
+.cake-left {
+    left: -65px;
+    top: 35px;
+    transform: rotate(-18deg);
+}
+
+.cake-right {
+    right: -65px;
+    bottom: 35px;
+    transform: rotate(18deg);
+}
+
+#gameOverPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #ffe0f0, #fff0b3);
+    padding: 25px;
+    border: 4px solid #d63384;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000;
+    width: 250px;
+    box-shadow: 0 0 30px #ff69b4;
+}
+
+#gameOverPopup h2 {
+    color: #a00068;
+}
+
+#playAgainButton {
+    background: linear-gradient(135deg, #ff69b4, #a855f7);
+    color: white;
+    padding: 13px 25px;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
